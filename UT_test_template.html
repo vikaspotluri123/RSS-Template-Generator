@@ -1,0 +1,347 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<meta name = "viewport" content="width=device-width, initial-scale=1">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+</head>
+
+<body style = "margin:0px;padding:0px;background-color:#cacaca;text-align:center;"><div style = "background-color:#f9f9f9;text-align:center;"><style>table td { border:0px; }</style>
+<table style = "margin-left:auto;margin-right:auto;text-align:left;" border = "0" cellpadding = "0" cellspacing = "0">
+<tr>
+<td style = "">
+
+<div><style>a, a:link, a:visited { color:#00948d; } table { border-collapse: collapse; }  .yshortcuts { border-bottom: none !important; }     .ExternalClass { width:100%; }     p {margin-bottom: 1em; } </style> <table align="center" bgcolor="#ececec" border="0" cellpadding="12" cellspacing="0" width="550"><tbody><tr>             <td>             
+
+
+
+<!-- Header image -->             
+
+<table style="border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="526">                 
+<tbody><tr><td>                         
+
+<table style="border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="526" height="110"><tbody><tr>                                     
+<!-- RRISD LOGO -->
+<td colspan="5" style="line-height: 45px;" width="526" height="45">
+<a href="https://www.roundrockisd.org" border="0" style = "text-decoration:none;"><img src="https://roundrockisd.org/wp-content/uploads/2016/01/RRISD-LOGO-H-200.png" alt="Round Rock ISD" style="display: block;" align="absbottom" width="200" height="37"></a>
+</td>
+</tr>
+
+<!-- E-NEWS LOGO -->
+<tr>
+<td rowspan="2" style="line-height:90px;" width="410" height="90">
+<img src="" alt="Round Rock ISD e-News" style="display: block;" align="absbottom" width="410" height="90"></td>
+
+
+
+<!-- Facebook logo -->
+<td style="line-height:61px;" valign="top" width="29" height="61">
+<a href="http://connect.utexas.edu/redirect.aspx?linkID=223552&eid=2379245" border="0" style = "text-decoration:none;border:none;"><img src="http://connect.utexas.edu/s/1385/images/gid12/editor/attexas/2015_header/attexas_facebook.gif" alt="@roundrockisd" style="display: block;" align="absbottom" width="29" height="61"></a></td>                                     
+
+
+
+
+<!-- Twitter logo -->
+<td style="line-height:61px;" valign="top" width="29" height="61"><a href="http://connect.utexas.edu/redirect.aspx?linkID=223551&eid=2379245" border="0" style = "text-decoration:none;"><img src="http://connect.utexas.edu/s/1385/images/gid12/editor/attexas/2015_header/attexas_twitter.gif" alt="@roundrockisd" style="display: block;" align="absbottom" width="29" height="61"></a></td>                                     
+
+
+
+
+<!-- YouTube logo -->
+<td style="line-height:61px;" valign="top" width="29" height="61"><a href="http://connect.utexas.edu/redirect.aspx?linkID=223550&eid=2379245" border="0" style = "text-decoration:none;"><img src="http://connect.utexas.edu/s/1385/images/gid12/editor/attexas/2015_header/attexas_linkedin.gif" alt="Round Rock ISD video" style="display: block;" align="absbottom" width="29" height="61"></a></td>
+
+
+
+
+<!-- Instagram logo -->
+<td style="line-height:61px;" valign="top" width="29" height="61"><a href="http://connect.utexas.edu/redirect.aspx?linkID=223549&eid=2379245" border="0" style = "text-decoration:none;"><img src="http://connect.utexas.edu/s/1385/images/gid12/editor/attexas/2015_header/attexas_instagram.gif" alt="@Texas" style="display: block;" align="absbottom" width="29" height="61"></a></td></tr>                                 
+
+
+
+ <!-- E-NEWS PUBLISH DATE // -->
+<tr>
+<td colspan="4" style="line-height: 29px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; color: #fff; text-align: right; padding-right: 5px;" bgcolor="#4e4e4e" valign="top" width="116" height="29">
+August 15, 2016</td></tr></tbody></table></td></tr></tbody></table>             
+<!-- END Header -->  
+  
+  
+<!-- BEGIN HERO IMAGE // -->
+
+<table bgcolor="#f9f9f9" border="0" cellpadding="0" cellspacing="0" width="526">
+<tbody><tr><td colspan="2"><a href="http://connect.utexas.edu/redirect.aspx?linkID=223548&eid=2379245" style = "text-decoration:none;border:none;"><img src="http://roundrockisd.org/wp-content/uploads/2016/07/backtoschool-01.jpg" alt="UT Austin Ranks Among World’s Best" style="display: block;" width="526"></a></td></tr><tr>
+<!-- // END HERO IMAGE -->
+
+
+
+
+
+
+
+
+<script>
+    
+    function fetchRSSFeed() {
+      var element = document.getElementById("rss_feed");
+      var feed = new google.feeds.Feed(element.dataset.feed);     
+      feed.setNumEntries(element.dataset.count);
+      feed.load(showRSSFeed);
+    }
+ 
+    function showRSSFeed(result) {
+ 
+      var html = "";
+ 
+      if (!result.error) {
+        var entries = result.feed.entries;
+        for (var i = 0; i < entries.length; i++) {
+          html += "<li><a href='" + entries[i].link + "'target='_blank'>" + entries[i].title + "</a></li>"
+        }
+      } else {
+        html = "Error: " + result.error.message;
+      }
+ 
+      document.getElementById("rss_feed").innerHTML = "<ul>" + html + "</ul>";
+    }
+ 
+    window.onload = function() {
+      fetchRSSFeed();
+    }
+  </script>
+ 
+ 
+    <div id="rss_feed" 
+         data-feed="https://roundrockisd.org?module=search&key=dbb0824ac4f64531525c23b22f0d485d&msreader_rss_feeds=view&args%5Bsearch_value%5D=enews&args%5Bsearch_type%5D=tag" 
+         data-count="3">Loading RSS Feed..</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EMPTY SPACE  -->
+<tr><td colspan="2" style="padding-bottom: 20px;">
+<hr></td></tr>  
+
+                   
+
+<!-- ROW WITH TEXT ONLY --> 
+<tr><td colspan="2" style="padding-bottom: 10px;"><p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #4e4e4e; line-height: 19px; padding-left: 12px; padding-right: 12px;"><strong>Register your student for the 2016-2017 school year.</strong></p>
+
+<p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000; line-height: 19px; padding-left: 12px; padding-right: 12px;">The 2016-2017 school year begins August 23! Visit our enroll web page to register your student. <a href="https://roundrockisd.org/enroll" style = "color:#00948d;">Enroll today</a>.</p></td></tr>                     
+
+
+
+                 
+
+
+
+
+<!-- EMPTY SPACE  -->
+<tr><td colspan="2" style="padding-bottom: 20px;">
+<hr></td></tr>                     
+
+
+
+
+
+
+
+<!-- EMPTY SPACE  -->
+<tr><td colspan="2"  style="padding-bottom: 5px;">&nbsp;</td>                     
+</tr>                     
+
+
+<!-- ////////////////TWO COLUMN SIDEBARS BEGIN -->
+<tr><td valign="top" width="50%">
+
+
+
+			<!-- TWO COLUMN SIDEBAR LEFT SIDEBAR -->
+<table style="margin-left: 12px; margin-right: 15px; margin-bottom: 20px; min-height: 765px;" bgcolor="#eeece8" border="0" cellpadding="15" cellspacing="0" width="236" height="765"><tbody><tr>
+  <td colspan="4" padding-bottom: 0px;" valign="top"><center><a href="https://hr.roundrockisd.org/" style = "text-decoration:none;border:none;"><img src="http://roundrockisd.org/wp-content/uploads/2016/03/sidebar-3.jpg" alt="join our world class team" align="middle" border="0" width="204" height="765"></a></center><br>
+</td></tr> <tr><td colspan="4" align="center" valign="bottom"></td></tr></tbody></table></td><td valign="top" width="50%">
+
+<!-- END TWO COLUMN SIDEBAR LEFT SIDEBAR  -->
+
+<!-- //////////////TWO COLUMN SIDEBAR RIGHT SIDEBAR -->  
+<table style="margin-left: 15px; margin-right: 12px; margin-bottom: 20px; min-height: 765px;" bgcolor="#eeece8" border="0" cellpadding="15" cellspacing="0" width="236" height="765"><tbody><tr><td style="padding-bottom: 0px;" valign="top"><center><a href="https://roundrockisd.org/wp-content/uploads/2016/07/KUTZ4KID_Final9.pdf"><img src="http://roundrockisd.org/wp-content/uploads/2016/03/sidebar-1.jpg" alt="School Supplies Sunday" align="middle" border="0" width="204" height="765"><br></a></center></td></tr></tbody></table></td></tr>                     
+	
+
+
+<!-- TWO COLUMN SIDEBARS END  -->
+
+<tr><td colspan="2" bgcolor="#4e4e4e"; padding-top: 10px; style="font-family: Helvetica,Arial,sans-serif; font-weight: bold; font-size: 24px; text-align: center;"><span style="font-weight: bold; text-align: center; font-family: <strong>Helvetica,Arial,sans-serif;</strong> font-size: 24px; color: #fff;"><center>
+District News
+</center></span></td></tr>
+
+
+
+<!-- EMPTY SPACE  -->
+<tr><td colspan="2" style="padding-top: 5px;"></tr>                    
+
+
+
+
+<tr><td colspan="2">
+
+<!-- ///////////////////////BEGIN SINGLE COLUMN NEWS STORY 1  -->
+<table style="margin-top: 20px; margin-left: 12px;" width="526"><tbody><tr><td width="50%"><a href="http://connect.utexas.edu/redirect.aspx?linkID=223531&eid=2379245" style = "text-decoration:none;border:none;"><img src="https://roundrockisd.org/wp-content/uploads/2016/08/Phaseone-01-360x360.jpg" alt="Your Ultimate Summer Reading Guide" style="display: block; line-height: 19px;" width="236" height="236"></a></td><td style="padding-top: 0px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" valign="top" width="50%"><h2 style = "font-family: Helvetica,Arial,sans-serif !important;font-size:21px;font-weight:normal;color:#00948d;margin-bottom:0px;"><span style="font-weight: normal; margin-bottom: 0px; font-size: 21px; color: rgb(203, 96, 21);"><a href="https://roundrockisd.org/round-rock-isd-increases-access-equity-in-strategic-plan-phase-one/" style = "text-decoration:none;color:#00948d;"><strong>Round Rock ISD increases access, equity in Strategic Plan Phase One</strong></a></span></h2> <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000; line-height: 19px;">Round Rock ISD increased access to technology, higher education and enrichment while improving academic equity for all students during Phase One of its Strategic Plan.</p></td></tr></tbody></table>                         
+<!-- END SINGLE COLUMN NEWS STORY 1\\\\\\\\\\\\\\\\\\\\\\\\\  -->
+
+
+
+
+<!-- ///////////////////////BEGIN SINGLE COLUMN NEWS STORY 2  -->
+<table style="margin-top: 20px; margin-left: 12px;" bgcolor="#eeece8" width="526"><tbody><tr><td width="50%"><a href="https://roundrockisd.org/wp-content/uploads/2016/07/VirtualKickoffsmall-01-480x480.jpg" style = "text-decoration:none;border:none;"><img src="https://roundrockisd.org/wp-content/uploads/2016/07/VirtualKickoffsmall-01-480x480.jpg" alt="New VP for University Development Comes to UT" style="display: block;" width="236" height="236"></a></td><td style="padding-top: 0px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" valign="top" width="50%"><h2 style = "font-family: Helvetica,Arial,sans-serif !important;font-size:21px;font-weight:normal;color:#00948d;margin-bottom:0px;"><span style="margin-bottom: 0px; font-size: 21px; color: rgb(203, 96, 21);"><a href="http://connect.utexas.edu/redirect.aspx?linkID=223527&eid=2379245" style = "text-decoration:none;color:#00948d;"><strong>RRISD to live-stream Virtual Kickoff 2016</strong></a></span></h2><p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000; line-height: 19px;">Round Rock ISD Kickoff 2016 is going virtual. A Virtual Kickoff is a start of school year celebration broadcasted live to schools and departments hosting site-based watch parties so as to focus the entire organization to DREAM BIG and TAKE ACTION..</p></td></tr></tbody></table>
+<!-- END SINGLE COLUMN NEWS STORY 2\\\\\\\\\\\\\\\\\\\\\\\\\  -->
+
+
+
+
+
+<!-- ///////////////////////BEGIN SINGLE COLUMN NEWS STORY 3  -->
+<table style="margin-top: 20px; margin-left: 12px; font-family: Arial, Helvetica, sans-serif !important; font-size: 21px; font-weight: normal; color: #00948d; margin-bottom: 0px;" width="526"><tbody><tr><td width="50%"><a href="https://roundrockisd.org/wp-content/uploads/2016/07/Stars3_8-01-360x360.png" style = "text-decoration:none;border:none;"><img src="https://roundrockisd.org/wp-content/uploads/2016/07/Stars3_8-01-360x360.png" alt="‘My All American’ Hits Netflix" style="display: block;" width="236" height="236"></a></td><td style="padding-top: 0px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" valign="top" width="50%"><h2 style = "font-family: Helvetica,Arial,sans-serif !important;font-size:22px;font-weight:normal; color: #00948d; margin-bottom:0px;"><span style="font-weight: normal; margin-bottom: 0px; font-size: 21px; font-family:Helvetica,Arial,sans-serif ; color: #00948d;"><a href="http://connect.utexas.edu/redirect.aspx?linkID=223524&eid=2379245" style = "text-decoration:none;color: #00948d;"><strong>STAAR results now available for grades 3-8</strong></a></span></h2><p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000; line-height: 19px;">Test results for the 2016 State of Texas Assessment of Academic Readiness (STAAR) are now available for grades 3-8. Parents and students can receive results in-person at the student’s campus or online at the <a href="https://txparentportal.emetric.net/login?returnUrl=/list">Texas Assessment Web Portal.</a></p></td></tr></tbody></table>
+<!-- END SINGLE COLUMN NEWS STORY 3\\\\\\\\\\\\\\\\\\\\\\\\\  -->
+
+
+
+
+<!-- ///////////////////////BEGIN SINGLE COLUMN NEWS STORY 4  -->
+<table style="margin-top: 20px; margin-left: 12px;" bgcolor="#eeece8" width="526"><tbody><tr><td width="50%"><a href="https://roundrockisd.org/rrisd-awards-1-9-million-in-innovative-school-grants-to-34-schools/" style = "text-decoration:none;border:none;"><img src="https://roundrockisd.org/wp-content/uploads/2016/07/innovative_v2-01-480x480.png" alt="Campus Carry Implementation" style="display: block;" width="236" height="236"></a></td><td style="padding-top: 0px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" valign="top" width="50%"><h2 style = "font-family: Helvetica,Arial,sans-serif !important;font-size:21px;font-weight:normal;color:#00948d;margin-bottom:0px;"><span style="margin-bottom: 0px; font-size: 21px; color: rgb(203, 96, 21);"><a href="https://roundrockisd.org/rrisd-awards-1-9-million-in-innovative-school-grants-to-34-schools/" style = "text-decoration:none;color:#00948d;"><strong>$1.9 million in Innovative School Grants awarded to 34 schools</strong></a></span></h2>                                     
+<p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000; line-height: 19px;">Round Rock ISD has awarded $1.9 million in Innovative School Grants to 34 District campuses, challenging the winning schools to explore, enrich or design an exemplary model of innovation to serve students and the community. <a href="https://roundrockisd.org/rrisd-awards-1-9-million-in-innovative-school-grants-to-34-schools/" style = "color:#00948d;">Learn more about what this means for our students</a>.</p></td></tr></tbody></table>
+
+<!-- END SINGLE COLUMN NEWS STORY 4\\\\\\\\\\\\\\\\\\\\\\\\\  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td></tr></tbody></table>
+
+
+
+
+
+
+
+
+</td></tr></tbody></table>
+
+
+</div>
+</td>
+</tr>
+</table>
+
+
+<!-- FOOTER -->
+
+<table width="526" cellspacing="0" cellpadding="0" border="0" align="center" _moz_resizing="true" style="padding: 15px; display: block; background-color: #f9f9f9; border-collapse: collapse;" valign="top">
+
+<tbody>
+
+<tr>
+
+<td style="padding: 10px; background-color: #f9f9f9; width: 526px;" border="0" colspan="3">
+
+<p style="font-family: verdana,arial,helvetica,sans-serif; font-size: 11px; color: #444444; text-align: center;">
+
+Round Rock ISD &nbsp;&nbsp; 1311 Round Rock Ave., &nbsp;&nbsp; Round Rock, TX 78681<br>
+
+<br>
+
+<p style="font-family: verdana,arial,helvetica,sans-serif; font-size: 11px; color: #444444; text-align: center;"><a href="https://roundrockisd.org/about-rrisd/e-news-community-subscription/">Subscribe to Round Rock ISD e-News</a><br>
+
+<br>
+
+
+
+<!-- padding for the bottom of email -->
+
+<br>
+
+<br>
+
+<!-- END padding for email -->
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table></div></div>
+
+
+</body>
+
+</html>
+
+
+<!-- TWO COLUMN NEWS ARTICLES 
+<tr>
+<td valign="top" width="50%">
+<table style="margin-left: 12px; margin-right: 15px; margin-bottom: 20px;" border="0" cellpadding="0" cellspacing="0" width="236">
+<tbody><tr></tr>
+
+<tr><td>
+<a href="http://connect.utexas.edu/redirect.aspx?linkID=223545&eid=2379245" style = "text-decoration:none;border:none;"><img src="http://connect.utexas.edu/s/1385/images/gid12/editor/attexas/08-04-16/02_olympics_236x138.png" alt="Longhorns Compete in Rio" style="display: block;" width="236" height="138"></a></td></tr>                                 
+
+<tr><td style="padding-top: 5px; padding-right: 0px; padding-bottom: 5px; padding-left: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: #00948d;"><a href="http://connect.utexas.edu/redirect.aspx?linkID=223544&eid=2379245" style = "text-decoration:none;color:#00948d;"><span style="font-size: 22px; font-family: Arial, Helvetica, sans-serif; color:#00948d;"><strong>Longhorns Compete in Rio</strong></span></a></td></tr>
+
+<tr><td>
+<p height="150px" style="font-family: Arial,Helvetica,sans-serif; font-size: 14px; color: rgb(0, 0, 0); line-height: 19px;">Twenty student athletes and five coaches will compete in the 2016 Olympics. <a href="http://connect.utexas.edu/redirect.aspx?linkID=223543&eid=2379245" style = "color:#00948d;">Put your horns up, and follow Longhorns competing in the games</a>.</p></td></tr></table></td>
+<td valign="top" width="50%">                         
+<table style="margin-left: 15px; margin-right: 12px; margin-bottom: 20px;" border="0" cellpadding="0" cellspacing="0" width="236"><tbody><tr></tr>                                 
+
+<tr><td><a href="http://connect.utexas.edu/redirect.aspx?linkID=223542&eid=2379245" style = "text-decoration:none;border:none;"><img src="http://connect.utexas.edu/s/1385/images/gid12/editor/attexas/08-04-16/03_newshour_236x138.jpg" alt="Remembering the Tower Tragedy" style="display: block;" width="236" height="138"></a></td></tr><tr><td style="padding-top: 5px; padding-right: 0px; padding-bottom: 5px; padding-left: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: #00948d;"><span style="font-size: 22px; font-family: Arial, Helvetica, sans-serif; color: rgb(203, 96, 21);"><a href="http://connect.utexas.edu/redirect.aspx?linkID=223541&eid=2379245" style = "text-decoration:none;color:#00948d;"><strong>Remembering the Tower Tragedy</strong></a></span></td></tr><tr><td>
+<p height="150px" style="font-family: Arial,Helvetica,sans-serif; font-size: 14px; color: rgb(0, 0, 0); line-height: 19px;">President Fenves talked with PBS NewsHour on the 50th anniversary of the Tower shooting. <a href="http://connect.utexas.edu/redirect.aspx?linkID=223540&eid=2379245" style = "color:#00948d;">Watch how we&rsquo;re honoring the victims and survivors</a>.</p></td></tr></tbody></table></td></tr>                     
+-->    
+
+
+
+
+
+
+<!-- SOCIAL MEDIA BUTTONS
+<tr><td valign="bottom" width="25%"><a href="http://connect.utexas.edu/redirect.aspx?linkID=223537&eid=2379245" border="0" style = "text-decoration:none;border:none;"><img src="http://connect.utexas.edu/s/1385/images/gid12/editor/attexas/facebook_orng.png" alt="Facebook" width="29" height="29"></a></td><td valign="bottom" width="25%"><a href="http://connect.utexas.edu/redirect.aspx?linkID=223536&eid=2379245" border="0" style = "text-decoration:none;border:none;"><img src="http://connect.utexas.edu/s/1385/images/gid12/editor/attexas/twitter_orng.png" alt="Twitter" border="0" width="29" height="29"></a></td><td valign="bottom" width="25%"><a href="http://connect.utexas.edu/redirect.aspx?linkID=223535&eid=2379245" border="0" style = "text-decoration:none;border:none;"><img src="http://connect.utexas.edu/s/1385/images/gid12/editor/attexas/linkedin_orng.png" alt="LinkedIn" border="0" width="29" height="29"></a></td><td valign="bottom" width="25%"><a href="http://connect.utexas.edu/redirect.aspx?linkID=223534&eid=2379245" border="0" style = "text-decoration:none;border:none;"><img src="http://connect.utexas.edu/s/1385/images/gid12/editor/attexas/instagram_orng.png" alt="Instagram" border="0" width="29" height="29"></a></td></tr>  -->
